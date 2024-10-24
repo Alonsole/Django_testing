@@ -24,14 +24,13 @@ test_url = '/api/v1/courses/'
 
 - проверка получения первого курса (retrieve-логика) - def test_get_first_course(client, course_create),
 - проверка получения списка курсов (list-логика) - def test_get_list_course(client, course_n),
-- проверка фильтрации списка курсов по `id`- test_course_filter_list_by_id(client, course_n),
+- проверка фильтрации списка курсов по `id`- def test_course_filter_list_by_id(client, course_n),
 - проверка фильтрации списка курсов по `name` - def test_filter_course_list_by_name(client, course_n),
 - тест успешного создания курса - def test_create_course(client),
 - тест успешного обновления курса - def test_update_course(client, course_create),
 - тест успешного удаления курса - def test_delete_course(client, course_create).
 
 Перед началом работы убедитесь, что все зависимости установлены (dev-зависимости указаны в `requirements-dev.txt`) 
-и тесты успешно запускаются. Вы должны увидеть:
 
 ## Документация
 
